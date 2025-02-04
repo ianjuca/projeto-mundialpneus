@@ -15,33 +15,53 @@
 
 body {
     font-family: var(--fonte-padrao);
-    background-color: var(--cor1);
+    background-color: var(--cor3);
     color: var(--cor2);
-    width: 100% auto;
 }
 
 header {
-    display: block;
-    margin: auto;
     background-color: var(--cor2);
     padding: 10px 0;
-    text-align: center;
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.vazio{
+    margin-left: 80px;
 }
 
-header > img {
+.centro{
+    display: flex;
+    flex-direction: column;
+}
+
+.centro > img {
     height: 100px;
-    display: block;
-    text-align: left;
-    margin: auto;
+    width: 250px;
+    height: 70px;
+}
+.whatsapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whatsapp i{
+    font-size: 70px;
+    margin-right: 80px;
+    color: #25D366;
+}
+
+.whatsapp i:hover {
+    color: #25D366;
+    transition-duration: 1s;
+    font-size: 75px;   
+    text-shadow: 0 0 10px #25D366;
+    margin-right:75px;
 }
 
 nav {
-    display: block;
-    margin: auto;
     background-color: var(--cor2);
     padding: 10px 0 0 0;
-    text-align: center;
 }
 
 nav a {
@@ -56,64 +76,85 @@ nav a:hover {
     background-color: var(--cor1);
     color: var(--cor2);
     border-radius: 5px;
-    text-decoration: underline;
+    text-decoration: none;
     transition-duration: 1000ms;
+    padding: 3px;
 }
 
 main {
     background-color: var(--cor3);
-    min-width: 300px;
-    max-width: 800px;
-    margin:  auto;
-    margin-top: 25px;
-    margin-bottom: -10px;
-
 }
 
-.aaa {
+section.sobre{
+    background-image: url(imagens/background-sobre-mundial\ \(3\).jpg);
+    height: 850px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texto-sobre {
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #D2D682;
+    height: 850px;
+    width: 510px;
+    font-size: 1.4em;
+    line-height: 1.5em;
 }
 
-.aaa p {
+.texto-sobre p {
     margin: 0 10px;
-    width: 500px;;
+    width: 400px;
 }
-
-section.Lojas {
-    margin: auto;
-    padding: 10px 0;
+section.lojas {
     text-align: center;
 }
 
-section.Lojas h1 {
+section.lojas > h1 {
     color: var(--cor2);
     font-size: 3em;
     font-weight: bold;
     padding: 20px;
+    margin-top: 20px;
 }
 
 .img-lojas {
     display: flex;
-    justify-content: center;
     justify-content: space-around;
     margin:  auto;
     width: 100%;
+    margin-top:60px
+}
+.loja1 img{
+    max-width:400px;
+    max-height:250px;
+    
+}
+.loja2 img{
+    max-width:400px;
+    max-height:250px;
+}
+.loja3 img{
+    max-width:400px;
+    max-height:250px;
+}
+.loja4 img{
+    max-width:400px;
+    max-height:250px;
 }
 
-section.Lojas p {
-    display: inline-block;
-    text-align: justify;
-    padding: 20px;
-    margin: 10px ;
-    line-height: 2em;
+.enderecos {
+    display: flex;
 }
 
-section.Lojas a {
+.enderecos p {
+    margin: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
     color: var(--cor2);
-    text-decoration: none;
 }
-
 .Whatsapp {
     display: block;
     margin: auto;
@@ -158,7 +199,7 @@ main p > a > img {
 .box-whatsapp {
     max-width: 100px;
     margin: auto;
-    background-color: rgb(115, 226, 115);
+    background-color: #25D366;
     padding: 10px 0;
     height: 20px;
     border-radius: 10px;
