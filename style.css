@@ -47,7 +47,7 @@ header{
 }
 
 .whatsapp-top i{
-    font-size: 60px;
+    font-size: 50px;
     color: #25D366;
 }
 
@@ -62,7 +62,8 @@ header{
     font-weight: bold;
     font-size: 0.8em;
     text-align: center;
-    line-height: 2em;
+    line-height: 1.5em;
+    padding-top: 15px;
 }
 
 .whatsapp-top > p > a > strong {
