@@ -13,7 +13,7 @@
     --fonte-padrao: 'Poppins', sans-serif;	
 }
 
-body {
+body , html {
     font-family: var(--fonte-padrao);
     background-color: var(--cor3);
     color: var(--cor2);
@@ -21,60 +21,80 @@ body {
 header{
     display: flex;
     background-color: black;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
 }
 .header {
     background-color: var(--cor2);
     height: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
-    flex-grow: 1.5;
 }
 
 .header > img {
-    width: 400px;
+    width: 250px;
     height: 120px;
-    padding-left: 50px;
 }
 
-.header i{
-    font-size: 90px;
+.whatsapp-top {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.whatsapp-top i{
+    font-size: 60px;
     color: #25D366;
 }
 
-header > p {
-    color: white;
-    max-width:100px;
-    padding-right: 50px;
-    padding-left: 10px;
+.whatsapp-top > p {
+    width: 100px;
 }
 
-header > p > a {
+.whatsapp-top > p > a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 0.8em;
 }
 
-header > p > a > strong {
+.whatsapp-top > p > a > strong {
     color:#25D366 ;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 58px;
+    height: 124px;
+}
+
+#menu {
+    display: block;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+#menu:hover {
+    color: yellow;
 }
 
 nav {
     background-color: var(--cor2);
+    display: none;
+    padding-left: 20px;
 }
 
 nav a {
+    display: flex;
     color: var(--cor1);
     text-decoration: none;
-    font-size: 1.3em;
-    margin: 0 10px;
     font-weight: bold;
-    padding-right: 10px;
-    padding-left: 10px;
+    margin: 0 10px;
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 nav a:hover {
@@ -93,7 +113,6 @@ main {
     position: relative;
     width: 100%;  /* O vídeo vai ocupar a largura total do contêiner */
     max-width: 100%; /* Limite máximo de largura para telas grandes */
-    min-width: 300px;
     margin: 0 auto; /* Centraliza o vídeo na tela */
     padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
     height: 0; /* Altura inicial é 0, será ajustada pela padding-bottom */
@@ -133,8 +152,7 @@ section.sobre > h1 {
     font-size: 1.4em;
     line-height: 2em;
     background-color: var(--cor1);
-    margin: 0 10px;
-    width: 400px;
+    margin: 0 10px; 
     padding: 20px;
     border-radius: 20px;
 }
@@ -154,7 +172,6 @@ section.lojas > h1 {
 .img-lojas {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     margin-top:60px
 }
 .img-lojas a{
@@ -162,18 +179,10 @@ section.lojas > h1 {
 }
 
 .lojas-pi {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
     gap: 30px ;
 }
 
 .lojas-ma {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
     gap: 30px ;
     margin-top: 20px;
 }
@@ -297,7 +306,7 @@ section.lojas > h1 {
     margin-top: 100px;
 }
 .divisao p{
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
     color: var(--cor2);
 }
