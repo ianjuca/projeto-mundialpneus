@@ -36,12 +36,14 @@ header{
 .header > img {
     width: 200px;
     height: 100px;
-    padding-right: 10px;
+
 }
 
 .whatsapp-top {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
 }
 
 .whatsapp-top i{
@@ -54,10 +56,13 @@ header{
 }
 
 .whatsapp-top > p > a {
+    display: block;
     color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.8em;
+    text-align: center;
+    line-height: 2em;
 }
 
 .whatsapp-top > p > a > strong {
@@ -98,6 +103,8 @@ nav a {
     margin: 0 10px;
     transition: transform 0.3s ease;
     text-align: center;
+    font-size: 0.8em;
+    padding-top: 5px;
 }
 
 nav a:hover {
