@@ -145,7 +145,7 @@ section.sobre{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1000px;
+    height: 500px;
    text-align: center;
 }
 
@@ -153,37 +153,60 @@ section.sobre > h1 {
     color: var(--cor2);
     font-size: 2.5em;
     font-weight: bold;
-    padding: 0px 20px 80px 20px;
-    margin-top: 20px;
+    line-height: 0.7;
+    padding: 20px;
+    width: 400px;
+    margin: 0 10px;
+    background-color: var(--cor1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.texto-saibaMais {
+    font-size: 0.5em;
+    font-weight: normal;
+}
+
+#sobre {
+    cursor: pointer;
+}
+
+#textoSobre {
+    display: none;
 }
 
 
 .sobre p {
-    display: inline-block;
     font-size: 0.9em;
     line-height: 2em;
     background-color: var(--cor1);
     margin: 0 10px; 
     padding: 20px;
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    max-width: 400px;
 }
 
 section.lojas {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    width:100vw;
 }
 
 section.lojas > h1 {
     color: var(--cor2);
     font-size: 2.5em;
     font-weight: bold;
-    padding: 20px;
-    margin-top: 20px;
+    padding:   0px 20px 0px 20px;
 }
 
 .img-lojas {
     display: flex;
     flex-direction: column;
-    margin-top:60px
+    margin-top: 50px;
 }
 .img-lojas a{
     text-decoration: none;

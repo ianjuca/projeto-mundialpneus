@@ -40,8 +40,8 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/pWjmpSD-ph0?si=iPhXcQIIJ3Q10S9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
         </div>
         <section class="sobre" id="quemsomos">
-                <h1>QUEM SOMOS?</h1>
-                <p>Potencialize o desempenho das suas máquinas com nossos novos pneus de alta durabilidade! Descubra o que é verdadeira eficiência e confiabilidade, seja qual for o terreno ou desafio, esses pneus vão revolucionar o seu trabalho! Venha hoje mesmo conferir esses produtos em nossa loja  e descubra o poder que esses pneus podem trazer para o seu negócio! <br> <a href="https://wa.me/+55086981886263" class="box-whatsapp" target="_blank"><i class="bi bi-whatsapp"></i> Entre em contato</a></p>
+                <h1 id="sobre" onclick="clickSobre()">QUEM SOMOS? <br> <small class="texto-saibaMais">saiba mais⏎</small></h1>
+                <p id="textoSobre">Potencialize o desempenho das suas máquinas com nossos novos pneus de alta durabilidade! Descubra o que é verdadeira eficiência e confiabilidade, seja qual for o terreno ou desafio, esses pneus vão revolucionar o seu trabalho! Venha hoje mesmo conferir esses produtos em nossa loja  e descubra o poder que esses pneus podem trazer para o seu negócio! <br> <a href="https://wa.me/+55086981886263" class="box-whatsapp" target="_blank"><i class="bi bi-whatsapp"></i> Entre em contato</a></p>
         </section>
         <section class="lojas">    
                 <h1 id="lojas">NOSSAS LOJAS</h1>
@@ -123,8 +123,8 @@
             CONTATO
         </h1>
         <ul>
-            <li><a href="https://www.instagram.com/mundialpneus/" target="_blank" class="box-instagram"><i class="bi bi-instagram"></i>Instagram</a></li>
-            <li><a href="https://www.facebook.com/mundialpneu/?locale=pt_BR" class="box-facebook" target="_blank"><i class="bi bi-facebook"></i>Facebook</a></li>
+            <li><a href="https://www.instagram.com/mundialpneus/" target="_blank" class="box-instagram"><i class="bi bi-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.facebook.com/mundialpneu/?locale=pt_BR" class="box-facebook" target="_blank"><i class="bi bi-facebook"></i> Facebook</a></li>
             <li><a href="https://wa.me/+55086981886263" class="box-whatsapp" target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a></li>
         </ul>
         <img src="imagens/footer.jpg" alt="">
@@ -139,6 +139,14 @@
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
+            }
+        }
+        
+        function clickSobre() {
+            if (textoSobre.style.display == 'block') {
+                textoSobre.style.display = 'none'
+            } else {
+                textoSobre.style.display = 'block'
             }
         }
     </script>
