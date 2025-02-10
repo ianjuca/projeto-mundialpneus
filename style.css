@@ -155,7 +155,7 @@ section.sobre > h1 {
     font-weight: bold;
     line-height: 0.7;
     padding: 20px;
-    width: 400px;
+    width: 350px;
     margin: 0 10px;
     background-color: var(--cor1);
     border-top-left-radius: 20px;
@@ -184,7 +184,7 @@ section.sobre > h1 {
     padding: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    width: 400px;
+    width: 350px;
 }
 
 section.lojas {
