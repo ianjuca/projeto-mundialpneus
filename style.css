@@ -155,7 +155,7 @@ section.sobre > h1 {
     font-weight: bold;
     line-height: 0.7;
     padding: 20px;
-    width: 350px;
+    width: 300px;
     margin: 0 10px;
     background-color: var(--cor1);
     border-top-left-radius: 20px;
@@ -184,7 +184,7 @@ section.sobre > h1 {
     padding: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    width: 350px;
+    width: 300px;
 }
 
 section.lojas {
@@ -259,37 +259,37 @@ section.lojas > h1 {
 }
 .loja1 img{
     border: 3px solid var(--cor2);
-    width:400px;
+    width:350px;
     height:250px;
     margin-bottom: 30px;
 }
 .loja2 img{
     border: 3px solid var(--cor2);
-    width:400px;
+    width:350px;
     height:250px;
     margin-bottom: 30px;
 }
 .loja3 img{
     border: 3px solid var(--cor2);
-    width:400px;
+    width:350px;
     height:250px;
     margin-bottom: 30px;
 }
 .loja4 img{
     border: 3px solid var(--cor2);
-    width:400px;
+    width:350px;
     height:250px;
     margin-bottom: 30px;
 }
 .loja5 img{
     border: 3px solid var(--cor2);
-    width:400px;
+    width:350px;
     height:250px;
     margin-bottom: 30px;
 }
 .loja6 img{
     border: 3px solid var(--cor2);
-    width:400px;
+    width:350px;
     height:250px;
     margin-bottom: 30px;
 }
