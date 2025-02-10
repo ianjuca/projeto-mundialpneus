@@ -189,11 +189,10 @@ section.sobre > h1 {
 
 section.lojas {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width:100vw;
 }
 
 section.lojas > h1 {
@@ -206,6 +205,7 @@ section.lojas > h1 {
 .img-lojas {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 .img-lojas a{
@@ -393,6 +393,7 @@ footer h1 {
 footer ul {
     display: flex;
     list-style: none;
+    font-size: 0.9em;
     gap: 10px;
     justify-content: center;
     align-items: center;
