@@ -18,8 +18,7 @@ body , html {
     font-family: var(--fonte-padrao);
     background-color: var(--cor3);
     color: var(--cor2);
-    width: 100vw;
-    overflow-x: hidden;
+    width: 100%;
 }
 header{
     display: flex;
@@ -125,7 +124,7 @@ main {
 }
 .video-container{
     background-color: var(--cor1);
-    width: 100vw;
+    width: 100%;
 }
 .video {
     display: block;
@@ -391,18 +390,20 @@ section.clientes > h1 {
 .avaliacoes{
     background-color: var(--cor1);;
     max-height: 700px;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    max-width: 650px;
+    max-width: 860px;
     border-radius: 30px;
     padding: 20px;
     overflow-y: scroll;
     overflow-x: hidden;
+    gap: 40px;
 }
 
 .avaliacoes img{
-    width: 180px;
-    height: 90px;
+    width: 340px;
+    height: 200px;
 }
 
 footer {
@@ -629,6 +630,35 @@ footer > ul > li:hover {
     }
     .video {
         width: 1440px;
+        height: 900px;
+    }
+    section.sobre {
+        height: 700px;
+    }
+    .area-sobre{    
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+    .quem-somos{
+        height: 500px;
+    }
+    .quem-somos li{
+        line-height: 2.5em;
+    }
+    .produtos {
+        height: 500px;
+        margin-top: 0;
+    }
+    .produtos li{
+        line-height: 1.5em;
+    }
+    .mundial-pneus{
+        height: 500px;
+        margin-top: 0;
+    }
+    .mundial-pneus li{
+        line-height: 1.9em;
     }
     .img-lojas{
         display: flex;
@@ -645,7 +675,9 @@ footer > ul > li:hover {
         flex-direction: row;
         gap: 50px;
     }
-
+    .lojas-pi p{
+        font-size: 0.9em;
+    }
     #sobre{
         font-size: 3em;
         width: 700px;
@@ -659,7 +691,7 @@ footer > ul > li:hover {
     }
     section.sobre{ 
         margin-top: 70px;
-        height: 600px;
+        height: 1300px;
     }
     section.lojas > h1{
         font-size: 3em;
