@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -17,6 +18,8 @@ body , html {
     font-family: var(--fonte-padrao);
     background-color: var(--cor3);
     color: var(--cor2);
+    width: 100vw;
+    overflow-x: hidden;
 }
 header{
     display: flex;
@@ -43,6 +46,7 @@ header{
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    padding-right: 20px;
 }
 
 .whatsapp-top i{
@@ -121,10 +125,11 @@ main {
 }
 .video-container{
     background-color: var(--cor1);
+    width: 100vw;
 }
 .video {
     display: block;
-    width: 460px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -133,7 +138,7 @@ section.sobre{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1450px;
+    height: 1600px;
     text-align: center;
     margin-top: 50px;
 }
@@ -147,16 +152,23 @@ section.sobre > h1 {
     padding-bottom: 30px;
 }
 
+section.sobre ul {
+    margin: 0;
+    padding: 10px;
+
+}
+
 section.sobre ul li {
-    padding-bottom: 10px;
+   margin: 0;
+   padding: 5px 0;
 }
 
 .quem-somos {
     background-color: var(--cor1);
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
     width: 350px;
-    height: 320px;
+    height: 420px;
     text-align: justify;
     line-height: 2em;
     text-indent: 10px;
@@ -171,7 +183,7 @@ section.sobre ul li {
     padding: 30px;
     line-height: 2em;
     width: 350px;
-    height: 480px;
+    height: 550px;
     text-align: justify;
     text-indent: 10px;
     margin-top: 20px;
@@ -185,7 +197,7 @@ section.sobre ul li {
     padding: 30px;
     line-height: 2em;
     width: 350px;
-    height: 320px;
+    height: 510px;
     text-align: justify;
     text-indent: 10px;
     margin-top: 20px;
@@ -338,8 +350,9 @@ section.lojas > h1 {
 }
 
 .divisao{
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 40px;
     background-color: var(--cor1);
     width: 100%;
@@ -372,6 +385,7 @@ section.clientes > h1 {
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
+    width: 100%;
 }
 
 .avaliacoes{
