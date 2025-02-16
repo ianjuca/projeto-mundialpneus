@@ -36,7 +36,7 @@ header{
 }
 
 .header > img {
-    width: 200px;
+    width: 150px;
     height: 100px;
     padding-left: 10px;
 }
@@ -123,7 +123,7 @@ main {
     background-color: var(--cor3);
 }
 .video-container{
-    background-color: var(--cor1);
+    background-color: #ffee00;
     width: 100%;
 }
 .video {
@@ -131,8 +131,6 @@ main {
     max-width: 100%;
     margin: 0 auto;
 }
-
-
 section.sobre{
     display: flex;
     flex-direction: column;
@@ -140,6 +138,7 @@ section.sobre{
     height: 1600px;
     text-align: center;
     margin-top: 50px;
+    width: 100%;
 }
 
 section.sobre > h1 {
@@ -166,7 +165,7 @@ section.sobre ul li {
     background-color: var(--cor1);
     border-radius: 10px;
     padding: 20px;
-    width: 350px;
+    width: 320px;
     height: 420px;
     text-align: justify;
     line-height: 2em;
@@ -181,7 +180,7 @@ section.sobre ul li {
     border-radius: 10px;
     padding: 30px;
     line-height: 2em;
-    width: 350px;
+    width: 320px;
     height: 550px;
     text-align: justify;
     text-indent: 10px;
@@ -195,7 +194,7 @@ section.sobre ul li {
     border-radius: 10px;
     padding: 30px;
     line-height: 2em;
-    width: 350px;
+    width: 320px;
     height: 510px;
     text-align: justify;
     text-indent: 10px;
@@ -230,12 +229,11 @@ section.lojas > h1 {
 }
 
 .lojas-pi {
-    gap: 30px ;
+    gap: 30px;
 }
 
 .lojas-ma {
-    gap: 30px ;
-    margin-top: 20px;
+    gap: 30px;
 }
 
 .loja1{
@@ -243,70 +241,76 @@ section.lojas > h1 {
     flex-direction: column;
     align-items: center;
     position: relative;
+    max-width: 320px;
 }
 .loja2{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    max-width: 320px;
 }
 .loja3{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    max-width: 320px;
 }
 .loja4{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    max-width: 320px;
 }
 .loja5{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    max-width: 320px;
 }
 .loja6{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    max-width: 320px;
 }
 .loja1 img{
     border: 3px solid var(--cor2);
-    width:350px;
+    width:320px;
     height:250px;
     margin-bottom: 30px;
 }
 .loja2 img{
     border: 3px solid var(--cor2);
-    width:350px;
+    width:320px;
     height:250px;
     margin-bottom: 30px;
 }
 .loja3 img{
     border: 3px solid var(--cor2);
-    width:350px;
+    width:320px;
     height:250px;
     margin-bottom: 30px;
 }
 .loja4 img{
     border: 3px solid var(--cor2);
-    width:350px;
+    width:320px;
     height:250px;
     margin-bottom: 30px;
 }
 .loja5 img{
     border: 3px solid var(--cor2);
-    width:350px;
+    width:320px;
     height:250px;
     margin-bottom: 30px;
 }
 .loja6 img{
     border: 3px solid var(--cor2);
-    width:350px;
+    width:320px;
     height:250px;
     margin-bottom: 30px;
 }
@@ -325,27 +329,32 @@ section.lojas > h1 {
 
 .loja1 a{
     position: absolute;
-    bottom: 40px;
+    bottom: 60px;
 }
 .loja2 a{
     position: absolute;
-    bottom: 40px;
+    bottom: 60px;
 }
 .loja3 a{
     position: absolute;
-    bottom: 40px;
+    bottom: 60px;
 }
 .loja4 a{
     position: absolute;
-    bottom: 40px;
+    bottom: 60px;
 }
 .loja5 a{
     position: absolute;
-    bottom: 40px;
+    bottom: 60px;
 }
 .loja6 a{
     position: absolute;
-    bottom: 40px;
+    bottom: 60px;
+}
+.img-lojas p{
+    font-size: 1em;
+    color: var(--cor2);
+    margin-top: 10px;
 }
 
 .divisao{
@@ -385,6 +394,7 @@ section.clientes > h1 {
     align-items: center;
     background-attachment: fixed;
     width: 100%;
+    flex-direction: column;
 }
 
 .avaliacoes{
@@ -402,10 +412,17 @@ section.clientes > h1 {
 }
 
 .avaliacoes img{
-    width: 340px;
-    height: 200px;
+    width: 280px;
+    height: 180px;
 }
-
+.botao-vermais{ 
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: var(--cor3);
+    border: none;
+    margin-top: 10px;
+}
 footer {
     text-align: center;
 }
@@ -430,6 +447,7 @@ footer ul {
 
 footer > ul > li {
     transition: transform 0.3s ease;
+    font-size: 0.9em;
 }
 
 footer > ul > li:hover {
@@ -467,7 +485,7 @@ footer > ul > li:hover {
 }
 
 .contato img {
-    width: 350px;
+    width: 320px;
     height: 200px;
     margin-top: 50px;
 }
@@ -497,7 +515,6 @@ footer > ul > li:hover {
 .buttons:hover {
     transform: scale(1.1);
 }
-
 @media screen and (min-width:768px){
     header{
         display: flex;
@@ -529,17 +546,17 @@ footer > ul > li:hover {
         height: 120px;
     }
     .video-container {
-        background-color: var(--cor1);
+        background-color: #ffee00;
     }
     .video {
         width: 500px;
     }
     .avaliacoes img{
-        width: 240px;
+        width: 210px;
         height: 120px;
     }
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1023px) {
     .navigation{
         font-size: 1.8em;
         width: 400px;
@@ -550,7 +567,7 @@ footer > ul > li:hover {
         font-size: 1.2em;
     }
     .video-container{
-        background-color: var(--cor1);
+        background-color: #ffee00;
     }
     .video {
         width: 500px;
@@ -626,7 +643,7 @@ footer > ul > li:hover {
         padding: 0;
     }
     .video-container {
-        background-color: var(--cor1);
+        background-color: #ffee00;
     }
     .video {
         width: 1440px;

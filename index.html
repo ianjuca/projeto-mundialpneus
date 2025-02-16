@@ -2,8 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.
-    0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="imagens/logo-mundialpneus.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <!-- Icons -->
@@ -89,7 +88,7 @@
                                     <i class="bi bi-geo-alt-fill">Teresina</i>
                                 </button>
                             </a>
-                            <p>Av. Pres. Getúlio Vargas, 1523 - Teresina-PI</p>
+                            <p>Av. Pres. Getúlio Vargas, 1523 <br> Teresina-PI</p>
                         </div>
                         <div class="loja2" >
                             <div class="borda"><img src="imagens/endereco-mundialpneus06.jpg" alt=""></div>
@@ -107,7 +106,7 @@
                                     <i class="bi bi-geo-alt-fill">Parnaíba</i>
                                 </button>
                             </a>
-                            <p>Av. Dep. Pinheiro Machado, 3154 - Parnaíba-PI</p>
+                            <p>Av. Dep. Pinheiro Machado, 3154 <br> Parnaíba-PI</p>
                         </div>
                     </div>
                     <div class="lojas-ma">
@@ -118,7 +117,7 @@
                                     <i class="bi bi-geo-alt-fill">Pres. Dutra</i>
                                 </button>
                             </a>
-                            <p>Av. José Olavo Sampaio, 867 Pres. Dutra-MA</p>
+                            <p>Av. José Olavo Sampaio, 867 <br>Pres. Dutra-MA</p>
                         </div>
                         <div class="loja5">
                             <div class="borda"><img src="imagens/endereco-mundialpneus05.jpg" alt=""></div>
@@ -127,7 +126,7 @@
                                     <i class="bi bi-geo-alt-fill">Codó</i>
                                 </button>
                             </a>
-                            <p>Av. Santos Dumont, N° 3967 Codó-MA</p>
+                            <p>Av. Santos Dumont, N° 3967<br> Codó-MA</p>
                         </div>
                         <div class="loja6">
                             <div class="borda"><img src="imagens/endereco-mundialpneus06.jpg" alt=""></div>
@@ -141,7 +140,9 @@
                     </div>
                 </div>
                 <div class="divisao">
-                    <p><i class="bi bi-credit-card-2-back-fill"></i> Dividimos em até 12x SEM JUROS</p>  <p><i class="bi bi-lock-fill"></i> Compra Segura </p> <p><i class="bi bi-star-fill"></i> + de 8 anos no mercado</p>
+                    <p><i class="bi bi-credit-card-2-back-fill"></i> Dividimos em até 12x SEM JUROS</p>
+                    <p><i class="bi bi-lock-fill"></i> Compra Segura </p>
+                    <p><i class="bi bi-star-fill"></i> + de 8 anos no mercado</p>
                 </div>
         </section>
         <section class="clientes">
@@ -193,6 +194,34 @@
                 textoSobre.style.display = 'block'
             }
         }
+        document.addEventListener("DOMContentLoaded", function() {
+            const avaliacoes = document.querySelectorAll('.avaliacoes img');
+            const button = document.createElement('button');
+            let visibleImages = 3;
+
+            button.textContent = 'Ver mais';
+            button.classList.add('botao-vermais');
+            document.querySelector('.background-clientes').appendChild(button);
+
+            avaliacoes.forEach((img, index) => {
+            if (index >= visibleImages) {
+                img.style.display = 'none';
+            }
+            });
+
+            button.addEventListener('click', function() {
+            visibleImages += 3;
+            avaliacoes.forEach((img, index) => {
+                if (index < visibleImages) {
+                img.style.display = 'inline';
+                }
+            });
+
+            if (visibleImages >= avaliacoes.length) {
+                button.style.display = 'none';
+            }
+            });
+        });
     </script>
 </body>
 </html>
