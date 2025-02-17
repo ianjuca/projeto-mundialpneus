@@ -136,7 +136,7 @@ section.sobre{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 600px;
+    max-height: 1600px;
     text-align: center;
     margin-top: 50px;
     width: 100%;
@@ -619,6 +619,17 @@ footer > ul > li:hover {
     .avaliacoes img{
         width: 240px;
     }
+    .background-clientes {
+        background-image: url(imagens/background-clientes.jpg);
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed;
+        width: 100%;
+        flex-direction: column;
+    }
 }
 @media screen and (min-width:1440px) {
     header{
@@ -716,7 +727,7 @@ footer > ul > li:hover {
     }
     section.sobre{ 
         margin-top: 70px;
-        height: 1300px;
+        max-height: 800px;
     }
     section.lojas > h1{
         font-size: 3em;
