@@ -12,6 +12,7 @@
     --cor2:black;
     --cor3:#f0f0f0;
     --fonte-padrao: 'Poppins', sans-serif;	
+    scroll-behavior: smooth;
 }
 
 body , html {
@@ -37,7 +38,7 @@ header{
 
 .header > img {
     width: 150px;
-    height: 100px;
+    height: 90px;
     padding-left: 10px;
 }
 
@@ -135,7 +136,7 @@ section.sobre{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1600px;
+    max-height: 600px;
     text-align: center;
     margin-top: 50px;
     width: 100%;
@@ -556,7 +557,7 @@ footer > ul > li:hover {
         height: 120px;
     }
 }
-@media screen and (min-width:1023px) {
+@media screen and (min-width:1024px) {
     .navigation{
         font-size: 1.8em;
         width: 400px;
@@ -612,10 +613,17 @@ footer > ul > li:hover {
     .divisao{
         font-size: 1.2em;
     }
+    .avaliacoes{
+        gap: 20px;
+    }
+    .avaliacoes img{
+        width: 240px;
+    }
 }
 @media screen and (min-width:1440px) {
     header{
         height: 180px;
+        justify-content: space-around;
     }
     .header img{
         width: 300px;
@@ -724,5 +732,13 @@ footer > ul > li:hover {
     }
     .contato{  
         font-size: 1.5em;
+    }
+    .avaliacoes{
+        gap: 25px;
+        min-width: 1000px;
+    }
+    .avaliacoes img{
+        width: 280px;
+        height: 160px;
     }
 }
