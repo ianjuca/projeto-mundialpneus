@@ -39,44 +39,42 @@
             </video>
         </div>
         <section class="sobre">
-                <h1 id="sobre">SOBRE</h1>
-                <div class="area-sobre">
-                    <div class="quem-somos">
-                        <h2>Quem somos?</h2>
-                        <ul>
-                            <li>Mundial Pneus, uma empresa especializada em fornecer soluções de pneus de alta qualidade. Com mais de 8 anos de experiência no mercado, nossa equipe é comprometida em oferecer produtos e serviços personalizados para atender às necessidades específicas de cada cliente.</li>
-                        </ul>
-                    </div>
-                    
-                    
-                    <div class="mundial-pneus">
-                        <h2>Por que escolher a Mundial Pneus? </h2>
-                        <ul>
-                            <li>Produtos de alta qualidade e durabilidade</li>
-                            <li>Preços competitivos e opções de pagamento flexíveis em até 12x sem juros</li>
-                            <li>Atendimento personalizado, buscando o melhor para o seu veículo</li>
-                        </ul>
-                        <strong>PENSOU EM PNEUS? MUNDIAL PNEUS! <br> </strong>
-                    </div>
-                    <div class="produtos">
-                        <div>
-                            <h2>Nossos produtos:</h2>
-                        </div>
-                        <div class="carrosel-baixo">
-                            <button id="prevButton">
-                                <i class="bi bi-caret-left-fill"></i>
-                            </button>
-                            <div class="carousel">
-                                <img src="imagens/pin-localizacao.jpg" alt="a" class='imgs-produtos' id="carouselImage">
-                                <p id="carouselText" class="text">txt do 1° item</p>
-                            </div>
-                            <button id="nextButton">
-                                <i class="bi bi-caret-right-fill"></i>
-                            </button>
-                        </div>
-                    </div>
+            <h1 id="sobre">SOBRE</h1>
+            <div class="area-sobre">
+                <div class="quem-somos">
+                    <h2>Quem somos?</h2>
+                     <ul>
+                        <li>Mundial Pneus, uma empresa especializada em fornecer soluções de pneus de alta qualidade. Com mais de 8 anos de experiência no mercado, nossa equipe é comprometida em oferecer produtos e serviços personalizados para atender às necessidades específicas de cada cliente.</li>
+                    </ul>
                 </div>
+                <div class="mundial-pneus">
+                    <h2>Por que escolher a Mundial Pneus? </h2>
+                    <ul>
+                        <li>Produtos de alta qualidade e durabilidade</li>
+                        <li>Preços competitivos e opções de pagamento flexíveis em até 12x sem juros</li>
+                        <li>Atendimento personalizado, buscando o melhor para o seu veículo</li>
+                    </ul>
+                    <strong>PENSOU EM PNEUS? MUNDIAL PNEUS! <br> </strong>
+                </div>
+            </div>
         </section>
+            <div class="produtos">
+                <div class="produtos-titulo">
+                    <h2>NOSSOS PRODUTOS</h2>
+                </div>
+                <div class="carrosel-baixo">
+                    <button id="prevButton">
+                        <i class="bi bi-caret-left-fill"></i>
+                    </button>
+                    <div class="carousel">
+                        <img src="imagens/pin-localizacao.jpg" alt="" class='imgs-produtos' id="carouselImage">
+                        <p id="carouselText" class="text">texto do primeiro item</p>
+                    </div>
+                    <button id="nextButton">
+                        <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                </div>
+            </div>
         <section class="lojas">    
                 <h1 id="lojas">NOSSAS LOJAS</h1>
                 <div class="img-lojas">
@@ -197,16 +195,16 @@
             }
         }
         const images = [
-            { src: "https://via.placeholder.com/400x250?text=Imagem+1", text: "Texto relacionado ao primeiro item." },
-            { src: "https://via.placeholder.com/400x250?text=Imagem+2", text: "Texto do segundo item aqui." },
-            { src: "https://via.placeholder.com/400x250?text=Imagem+3", text: "Este é o terceiro item do carrossel." },
-            { src: "https://via.placeholder.com/400x250?text=Imagem+4", text: "Texto do quarto item." },
-            { src: "https://via.placeholder.com/400x250?text=Imagem+5", text: "Texto do quinto item." },
-            { src: "https://via.placeholder.com/400x250?text=Imagem+6", text: "Texto do sexto item." },
-            { src: "https://via.placeholder.com/400x250?text=Imagem+7", text: "Texto do sétimo item." },
-            { src: "https://via.placeholder.com/400x250?text=Imagem+8", text: "Texto do oitavo item." },
-            { src: "https://via.placeholder.com/400x250?text=Imagem+9", text: "Texto do nono item." },
-            { src: "https://via.placeholder.com/400x250?text=Imagem+10", text: "Texto do décimo item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do primeiro item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do segundo item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do terceiro item" },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do quarto item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do quinto item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do sexto item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do sétimo item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do oitavo item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do nono item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do décimo item." },
         ];
 
         let currentIndex = 0;
