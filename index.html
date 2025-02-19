@@ -237,6 +237,41 @@
 
         nextButton.addEventListener("click", nextImage);
         prevButton.addEventListener("click", prevImage);
+        document.addEventListener("DOMContentLoaded", function() {
+            const avaliacoes = document.querySelectorAll('.avaliacoes img');
+            const button = document.getElementById('button1');
+            const button2 = document.getElementById('button2');
+            button2.style.display = 'none';
+            let visibleImages = 3;
+            avaliacoes.forEach((img, index) => {
+            if (index >= visibleImages) {
+                img.style.display = 'none';
+            }
+            });
+            button.addEventListener('click', function() {
+            visibleImages += 3;
+            button2.style.display = 'inline';
+            avaliacoes.forEach((img, index) => {
+                if (index < visibleImages) {
+                img.style.display = 'inline';
+                }
+            });
+            if (visibleImages >= avaliacoes.length) {
+                button.style.display = 'none';
+            }
+            });
+            
+            button2.addEventListener('click', function() {
+            button.style.display = 'inline';
+            button2.style.display = 'none';
+            visibleImages = 3;
+            avaliacoes.forEach((img, index) => {
+                if (index >= visibleImages) {
+                img.style.display = 'none';
+                }
+            });
+            });
+        });
     </script>
 </body>
 </html>
