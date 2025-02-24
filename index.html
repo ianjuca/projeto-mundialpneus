@@ -67,8 +67,8 @@
                         <i class="bi bi-caret-left-fill"></i>
                     </button>
                     <div class="carousel">
-                        <img src="imagens/pin-localizacao.jpg" alt="" class='imgs-produtos' id="carouselImage">
-                        <p id="carouselText" class="text">texto do primeiro item</p>
+                        <img src="imagens/pneu-passeio.JPG" alt="" class='imgs-produtos' id="carouselImage">
+                        <p id="carouselText" class="text">Na Mundial Pneus trabalhamos com <strong>Pneu de passeio</strong> com excelente aderência, conforto e durabilidade. Ideal para uso urbano e rodoviário, oferece baixa resistência ao rolamento e maior eficiência no consumo de combustível.</p>
                     </div>
                     <button id="nextButton">
                         <i class="bi bi-caret-right-fill"></i>
@@ -195,16 +195,16 @@
             }
         }
         const images = [
-            { src: "imagens/pin-localizacao.jpg", text: "Texto do primeiro item." },
-            { src: "imagens/pin-localizacao.jpg", text: "Texto do segundo item." },
-            { src: "imagens/pin-localizacao.jpg", text: "Texto do terceiro item" },
-            { src: "imagens/pin-localizacao.jpg", text: "Texto do quarto item." },
-            { src: "imagens/pin-localizacao.jpg", text: "Texto do quinto item." },
-            { src: "imagens/pin-localizacao.jpg", text: "Texto do sexto item." },
-            { src: "imagens/pin-localizacao.jpg", text: "Texto do sétimo item." },
-            { src: "imagens/pin-localizacao.jpg", text: "Texto do oitavo item." },
-            { src: "imagens/pin-localizacao.jpg", text: "Texto do nono item." },
-            { src: "imagens/pin-localizacao.jpg", text: "Texto do décimo item." },
+            { src: "imagens/pneu-passeio.JPG", text: "Na Mundial Pneus, trabalhamos com <strong>Pneu de passeio</strong> com excelente aderência, conforto e durabilidade. Ideal para uso urbano e rodoviário, oferece baixa resistência ao rolamento e maior eficiência no consumo de combustível." },
+            { src: "imagens/pneu-moto.JPG", text: "Na Mundial Pneus, trabalhamos com <strong>Pneu de moto</strong> com excelente aderência, estabilidade e durabilidade. Projetado para máximo desempenho em diferentes terrenos, garantindo segurança e conforto na pilotagem." },
+            { src: "imagens/pneu-caminhonete.JPG", text: "Na Mundial Pneus, trabalhamos com <strong>Pneu de caminhonete</strong> robusto e resistente, ideal para enfrentar diversos tipos de terrenos. Oferece excelente aderência, durabilidade e desempenho, garantindo segurança e conforto tanto na cidade quanto off-road." },
+            { src: "imagens/pneu-caminhao.jpg", text: " Na Mundial Pneus, trabalhamos com <strong>Pneu de caminhão</strong> resistente e durável, projetado para alto desempenho e longa vida útil. Oferece excelente aderência, estabilidade e eficiência no consumo de combustível, garantindo segurança e economia no transporte de cargas." },
+            { src: "imagens/pneu-agricola.jpg", text: "Na Mundial Pneus, trabalhamos com <strong>Pneu agrícola</strong> robusto e durável, projetado para máxima tração e desempenho no campo. Oferece excelente resistência, aderência e estabilidade, garantindo eficiência e produtividade em diferentes tipos de solo." },
+            { src: "imagens/camara-ar.jpg", text: "Na Mundial Pneus, trabalhamos com <strong>Câmara de ar</strong> resistente e de alta qualidade, projetada para garantir vedação eficiente e durabilidade. Ideal para diversos tipos de veículos, proporciona maior segurança e desempenho, reduzindo o risco de vazamentos e furos." },
+            { src: "imagens/material-borracharia.png", text: "Na Mundial Pneus, trabalhamos com <strong>Materiais de borracharia</strong> de alta qualidade, essenciais para reparos e manutenção de pneus. Incluem remendos, colas, válvulas, manômetros e ferramentas especializadas, garantindo eficiência, segurança e durabilidade nos serviços." },
+            { src: "imagens/oleo.jpg", text: "Na Mundial Pneus, trabalhamos com <strong>Óleo de carro</strong> de alta performance, essencial para a lubrificação e proteção do motor. Reduz o desgaste, melhora a eficiência e prolonga a vida útil do veículo, garantindo um desempenho suave e confiável." },
+            { src: "imagens/roda.jpg", text: "Na Mundial Pneus, trabalhamos com <strong>Roda</strong> resistente e de alto desempenho, projetada para oferecer segurança, estabilidade e estilo ao veículo. Disponível em diversos designs e materiais, garante durabilidade e excelente experiência de condução." },
+            { src: "imagens/bateria.png", text: "Na Mundial Pneus, trabalhamos com <strong>Bateria de carro</strong> de alta performance, garantindo partida rápida e fornecimento estável de energia. Durável e confiável, assegura o funcionamento dos sistemas elétricos do veículo com máxima eficiência." },
         ];
 
         let currentIndex = 0;
@@ -219,7 +219,7 @@
 
             setTimeout(() => {
                 imageElement.src = images[index].src;
-                textElement.textContent = images[index].text;
+                textElement.innerHTML = images[index].text;
                 imageElement.style.opacity = 1;
                 textElement.style.opacity = 1;
             }, 300);
