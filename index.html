@@ -39,42 +39,42 @@
             </video>
         </div>
         <section class="sobre">
-                <h1 id="sobre">SOBRE</h1>
-                <div class="area-sobre">
-                    <div class="quem-somos">
-                        <h2>Quem somos?</h2>
-                        <ul>
-                            <li>Mundial Pneus, uma empresa especializada em fornecer soluções de pneus de alta qualidade. Com mais de 8 anos de experiência no mercado, nossa equipe é comprometida em oferecer produtos e serviços personalizados para atender às necessidades específicas de cada cliente.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="produtos">
-                        <h2>Nossos produtos:</h2>
-                        <ul>
-                            <li>Pneus de passeio</li>
-                            <li>Pneus de caminhonete</li>
-                            <li>Pneus de caminhão</li>
-                            <li>Pneus de moto</li>
-                            <li>Pneus de máquinas agrícolas</li>
-                            <li>Câmaras de ar</li>
-                            <li>Materiais de borracharia</li>
-                            <li>Óleo</li>
-                            <li>Rodas</li>
-                            <li>Baterias</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="mundial-pneus">
-                        <h2>Por que escolher a Mundial Pneus? </h2>
-                        <ul>
-                            <li>Produtos de alta qualidade e durabilidade</li>
-                            <li>Preços competitivos e opções de pagamento flexíveis em até 12x sem juros</li>
-                            <li>Atendimento personalizado, buscando o melhor para o seu veículo</li>
-                        </ul>
-                        <strong>PENSOU EM PNEUS? MUNDIAL PNEUS! <br> </strong>
-                    </div>
+            <h1 id="sobre">SOBRE</h1>
+            <div class="area-sobre">
+                <div class="quem-somos">
+                    <h2>Quem somos?</h2>
+                     <ul>
+                        <li>Mundial Pneus, uma empresa especializada em fornecer soluções de pneus de alta qualidade. Com mais de 8 anos de experiência no mercado, nossa equipe é comprometida em oferecer produtos e serviços personalizados para atender às necessidades específicas de cada cliente.</li>
+                    </ul>
                 </div>
+                <div class="mundial-pneus">
+                    <h2>Por que escolher a Mundial Pneus? </h2>
+                    <ul>
+                        <li>Produtos de alta qualidade e durabilidade</li>
+                        <li>Preços competitivos e opções de pagamento flexíveis em até 12x sem juros</li>
+                        <li>Atendimento personalizado, buscando o melhor para o seu veículo</li>
+                    </ul>
+                    <strong>PENSOU EM PNEUS? MUNDIAL PNEUS! <br> </strong>
+                </div>
+            </div>
         </section>
+            <div class="produtos">
+                <div class="produtos-titulo">
+                    <h2>NOSSOS PRODUTOS</h2>
+                </div>
+                <div class="carrosel-baixo">
+                    <button id="prevButton">
+                        <i class="bi bi-caret-left-fill"></i>
+                    </button>
+                    <div class="carousel">
+                        <img src="imagens/pin-localizacao.jpg" alt="" class='imgs-produtos' id="carouselImage">
+                        <p id="carouselText" class="text">texto do primeiro item</p>
+                    </div>
+                    <button id="nextButton">
+                        <i class="bi bi-caret-right-fill"></i>
+                    </button>
+                </div>
+            </div>
         <section class="lojas">    
                 <h1 id="lojas">NOSSAS LOJAS</h1>
                 <div class="img-lojas">
@@ -164,6 +164,10 @@
                     <img src='https://cdn.trustindex.io/widgets/1f/1fadadd419fa548573163a0f146/social-image.png'>
                     <img src='https://cdn.trustindex.io/widgets/80/802f8e94163254809a26211326f/social-image.png'>
                 </div>
+                <div>
+                    <button class="botao-vermais" id="button1">Ver mais</button>
+                    <button class="botao-vermais" id="button2">Ver menos</button>
+                </div>
             </div>
         </section>
     </main>
@@ -190,33 +194,82 @@
                 itens.style.display = 'block'
             }
         }
-        
+        const images = [
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do primeiro item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do segundo item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do terceiro item" },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do quarto item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do quinto item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do sexto item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do sétimo item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do oitavo item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do nono item." },
+            { src: "imagens/pin-localizacao.jpg", text: "Texto do décimo item." },
+        ];
+
+        let currentIndex = 0;
+        const imageElement = document.getElementById("carouselImage");
+        const textElement = document.getElementById("carouselText");
+        const prevButton = document.getElementById("prevButton");
+        const nextButton = document.getElementById("nextButton");
+
+        function updateCarousel(index) {
+            imageElement.style.opacity = 0;
+            textElement.style.opacity = 0;
+
+            setTimeout(() => {
+                imageElement.src = images[index].src;
+                textElement.textContent = images[index].text;
+                imageElement.style.opacity = 1;
+                textElement.style.opacity = 1;
+            }, 300);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateCarousel(currentIndex);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateCarousel(currentIndex);
+        }
+
+        nextButton.addEventListener("click", nextImage);
+        prevButton.addEventListener("click", prevImage);
         document.addEventListener("DOMContentLoaded", function() {
             const avaliacoes = document.querySelectorAll('.avaliacoes img');
-            const button = document.createElement('button');
+            const button = document.getElementById('button1');
+            const button2 = document.getElementById('button2');
+            button2.style.display = 'none';
             let visibleImages = 3;
-
-            button.textContent = 'Ver mais';
-            button.classList.add('botao-vermais');
-            document.querySelector('.background-clientes').appendChild(button);
-
             avaliacoes.forEach((img, index) => {
             if (index >= visibleImages) {
                 img.style.display = 'none';
             }
             });
-
             button.addEventListener('click', function() {
             visibleImages += 3;
+            button2.style.display = 'inline';
             avaliacoes.forEach((img, index) => {
                 if (index < visibleImages) {
                 img.style.display = 'inline';
                 }
             });
-
             if (visibleImages >= avaliacoes.length) {
                 button.style.display = 'none';
             }
+            });
+            
+            button2.addEventListener('click', function() {
+            button.style.display = 'inline';
+            button2.style.display = 'none';
+            visibleImages = 3;
+            avaliacoes.forEach((img, index) => {
+                if (index >= visibleImages) {
+                img.style.display = 'none';
+                }
+            });
             });
         });
     </script>
