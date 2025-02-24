@@ -198,7 +198,7 @@ section.sobre ul li {
     flex-wrap: wrap;
     gap: 16px;
     width: 100%;
-    height: 700px;
+    height: 400px;
 }
 .produtos-titulo > h2{
     font-size: 1.8em;
