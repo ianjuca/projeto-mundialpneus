@@ -8,40 +8,46 @@
 }
 
 :root {
-    --cor1:yellow ;
-    --cor2:black;
-    --cor3:#f0f0f0;
-    --fonte-padrao: 'Poppins', sans-serif;	
+    --cor1: yellow;
+    --cor2: black;
+    --cor3: #f0f0f0;
+    --fonte-padrao: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
-body , html {
+body,
+html {
     font-family: var(--fonte-padrao);
     background-color: var(--cor3);
     color: var(--cor2);
     width: 100%;
 }
-header{
+
+header {
     display: flex;
     background-color: black;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
+
 .header {
     background-color: var(--cor2);
     height: 100px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
-.header-pc{
+
+.header-pc {
     display: none;
 }
-.whats-pc{
+
+.whats-pc {
     display: none;
 }
-.header > img {
+
+.header>img {
     width: 150px;
     height: 90px;
     padding-left: 10px;
@@ -54,16 +60,16 @@ header{
     justify-content: center;
 }
 
-.whatsapp-top i{
+.whatsapp-top i {
     font-size: 50px;
     color: #25D366;
 }
 
-.whatsapp-top > p {
+.whatsapp-top>p {
     width: 100px;
 }
 
-.whatsapp-top > p > a {
+.whatsapp-top>p>a {
     display: block;
     color: white;
     text-decoration: none;
@@ -74,9 +80,10 @@ header{
     padding-top: 15px;
 }
 
-.whatsapp-top > p > a > strong {
-    color:#25D366 ;
+.whatsapp-top>p>a>strong {
+    color: #25D366;
 }
+
 .whats-pc {
     display: none;
     flex-direction: column-reverse;
@@ -84,16 +91,16 @@ header{
     justify-content: center;
 }
 
-.whats-pc i{
+.whats-pc i {
     font-size: 50px;
     color: #25D366;
 }
 
-.whats-pc > p {
+.whats-pc>p {
     width: 100px;
 }
 
-.whats-pc > p > a {
+.whats-pc>p>a {
     display: block;
     color: black;
     text-decoration: none;
@@ -104,8 +111,8 @@ header{
     padding-top: 15px;
 }
 
-.whats-pc > p > a > strong {
-    color:#25D366 ;
+.whats-pc>p>a>strong {
+    color: #25D366;
 }
 
 .navigation {
@@ -158,16 +165,20 @@ nav a:hover {
 main {
     background-color: var(--cor3);
 }
-.video-container{
+
+.video-container {
     background-color: #ffee00;
     width: 100%;
 }
+
 .video {
     display: block;
     max-width: 100%;
     margin: 0 auto;
+    -webkit-playsinline: true;
 }
-section.sobre{
+
+section.sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,7 +188,7 @@ section.sobre{
     width: 100%;
 }
 
-section.sobre > h1 {
+section.sobre>h1 {
     color: var(--cor2);
     font-size: 2.5em;
     font-weight: bold;
@@ -192,9 +203,10 @@ section.sobre ul {
 }
 
 section.sobre ul li {
-   margin: 0;
-   padding: 5px 0;
+    margin: 0;
+    padding: 5px 0;
 }
+
 .area-sobre {
     display: flex;
     flex-direction: column;
@@ -214,7 +226,7 @@ section.sobre ul li {
     line-height: 2em;
     text-indent: 10px;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 
 }
 
@@ -235,26 +247,32 @@ section.sobre ul li {
     width: 100%;
     height: 400px;
 }
-.produtos-titulo > h2{
+
+.produtos-titulo>h2 {
     font-size: 1.5rem;
     margin-bottom: 30px;
 }
-#carouselImage{
+
+#carouselImage {
     width: 100px;
 }
-.carrosel-baixo{
+
+.carrosel-baixo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-#prevButton, #nextButton{
+
+#prevButton,
+#nextButton {
     background-color: #f0f0f0;
     border: none;
     cursor: pointer;
     font-size: 20px;
 }
-.carousel{
+
+.carousel {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -264,6 +282,7 @@ section.sobre ul li {
     min-height: 200px;
     text-align: center;
 }
+
 .mundial-pneus {
     background-color: var(--cor1);
     border-radius: 10px;
@@ -286,11 +305,11 @@ section.lojas {
     text-align: center;
 }
 
-section.lojas > h1 {
+section.lojas>h1 {
     color: var(--cor2);
     font-size: 2.5em;
     font-weight: bold;
-    padding:   20px 20px 0px 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .img-lojas {
@@ -299,7 +318,8 @@ section.lojas > h1 {
     flex-wrap: wrap;
     margin-top: 50px;
 }
-.img-lojas a{
+
+.img-lojas a {
     text-decoration: none;
 }
 
@@ -311,85 +331,97 @@ section.lojas > h1 {
     gap: 30px;
 }
 
-.loja1{
+.loja1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     max-width: 320px;
 }
-.loja2{
+
+.loja2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     max-width: 320px;
 }
-.loja3{
+
+.loja3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     max-width: 320px;
 }
-.loja4{
+
+.loja4 {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     max-width: 320px;
 }
-.loja5{
+
+.loja5 {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     max-width: 320px;
 }
-.loja6{
+
+.loja6 {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     max-width: 320px;
 }
-.loja1 img{
+
+.loja1 img {
     border: 3px solid var(--cor2);
-    width:320px;
-    height:250px;
+    width: 320px;
+    height: 250px;
     margin-bottom: 30px;
 }
-.loja2 img{
+
+.loja2 img {
     border: 3px solid var(--cor2);
-    width:320px;
-    height:250px;
+    width: 320px;
+    height: 250px;
     margin-bottom: 30px;
 }
-.loja3 img{
+
+.loja3 img {
     border: 3px solid var(--cor2);
-    width:320px;
-    height:250px;
+    width: 320px;
+    height: 250px;
     margin-bottom: 30px;
 }
-.loja4 img{
+
+.loja4 img {
     border: 3px solid var(--cor2);
-    width:320px;
-    height:250px;
+    width: 320px;
+    height: 250px;
     margin-bottom: 30px;
 }
-.loja5 img{
+
+.loja5 img {
     border: 3px solid var(--cor2);
-    width:320px;
-    height:250px;
+    width: 320px;
+    height: 250px;
     margin-bottom: 30px;
 }
-.loja6 img{
+
+.loja6 img {
     border: 3px solid var(--cor2);
-    width:320px;
-    height:250px;
+    width: 320px;
+    height: 250px;
     margin-bottom: 30px;
 }
-.img-lojas button{
+
+.img-lojas button {
     background-color: var(--cor1);
     color: var(--cor2);
     font-weight: bold;
@@ -402,37 +434,43 @@ section.lojas > h1 {
     height: 80px;
 }
 
-.loja1 a{
+.loja1 a {
     position: absolute;
     bottom: 60px;
 }
-.loja2 a{
+
+.loja2 a {
     position: absolute;
     bottom: 60px;
 }
-.loja3 a{
+
+.loja3 a {
     position: absolute;
     bottom: 60px;
 }
-.loja4 a{
+
+.loja4 a {
     position: absolute;
     bottom: 60px;
 }
-.loja5 a{
+
+.loja5 a {
     position: absolute;
     bottom: 60px;
 }
-.loja6 a{
+
+.loja6 a {
     position: absolute;
     bottom: 60px;
 }
-.img-lojas p{
+
+.img-lojas p {
     font-size: 1em;
     color: var(--cor2);
     margin-top: 10px;
 }
 
-.divisao{
+.divisao {
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -442,17 +480,18 @@ section.lojas > h1 {
     padding: 20px 0;
     margin-top: 100px;
 }
-.divisao p{
+
+.divisao p {
     font-size: 1em;
     font-weight: bold;
     color: var(--cor2);
 }
 
-section.clientes{
+section.clientes {
     text-align: center;
 }
 
-section.clientes > h1 {
+section.clientes>h1 {
     color: var(--cor2);
     font-size: 2.5em;
     font-weight: bold;
@@ -460,7 +499,7 @@ section.clientes > h1 {
     margin-top: 20px;
 }
 
-.background-clientes{
+.background-clientes {
     background-image: url(imagens/background-clientes.jpg);
     background-size: cover;
     height: 750px;
@@ -472,8 +511,9 @@ section.clientes > h1 {
     flex-direction: column;
 }
 
-.avaliacoes{
-    background-color: var(--cor1);;
+.avaliacoes {
+    background-color: var(--cor1);
+    ;
     max-height: 700px;
     justify-content: center;
     display: flex;
@@ -486,11 +526,12 @@ section.clientes > h1 {
     gap: 40px;
 }
 
-.avaliacoes img{
+.avaliacoes img {
     width: 280px;
     height: 180px;
 }
-.botao-vermais{ 
+
+.botao-vermais {
     width: 150px;
     height: 30px;
     border-radius: 10px;
@@ -498,6 +539,7 @@ section.clientes > h1 {
     border: none;
     margin-top: 10px;
 }
+
 footer {
     text-align: center;
 }
@@ -520,12 +562,12 @@ footer ul {
     margin-top: 20px;
 }
 
-footer > ul > li {
+footer>ul>li {
     transition: transform 0.3s ease;
     font-size: 0.9em;
 }
 
-footer > ul > li:hover {
+footer>ul>li:hover {
     transform: scale(1.1);
 }
 
@@ -565,22 +607,29 @@ footer > ul > li:hover {
     margin-top: 50px;
 }
 
-.whatsapp-button{
+.whatsapp-button {
     position: fixed;
-    bottom: 20px; /* Distância do fundo da tela */
-    right: 20px;  /* Distância da direita da tela */
-    background-color: #25D366; /* Cor de fundo do botão (verde do WhatsApp) */
-    border-radius: 10px; /* Torna o botão arredondado */
+    bottom: 20px;
+    /* Distância do fundo da tela */
+    right: 20px;
+    /* Distância da direita da tela */
+    background-color: #25D366;
+    /* Cor de fundo do botão (verde do WhatsApp) */
+    border-radius: 10px;
+    /* Torna o botão arredondado */
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: transform 0.3s ease; /* Efeito de transição ao passar o mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    transition: transform 0.3s ease;
+    /* Efeito de transição ao passar o mouse */
     font-weight: bold;
     color: white;
     text-decoration: none;
 }
 
 .whatsapp-button:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+    transform: scale(1.1);
+    /* Aumenta o tamanho do botão ao passar o mouse */
 }
 
 .buttons {
@@ -590,61 +639,76 @@ footer > ul > li:hover {
 .buttons:hover {
     transform: scale(1.1);
 }
-@media screen and (min-width:768px){
-    header{
+
+@media screen and (min-width:768px) {
+    header {
         display: flex;
         justify-content: space-between;
     }
-    #menu{
+
+    #menu {
         display: none;
     }
-    nav{
+
+    nav {
         display: flex;
         padding: 0;
     }
-    .header{
+
+    .header {
         order: 0;
-        margin-left:20px
+        margin-left: 20px
     }
-    .navigation{
+
+    .navigation {
         order: 1;
         align-items: center;
         font-size: 1.4em;
         height: 30px;
         padding: 0;
     }
-    .whatsapp-top{
+
+    .whatsapp-top {
         order: 2;
     }
-    .header img{
+
+    .header img {
         width: 250px;
         height: 120px;
     }
+
     .video-container {
         background-color: #ffee00;
     }
+
     .video {
         width: 500px;
     }
-    .produtos{
+
+    .produtos {
         font-size: 1.5em;
     }
-    .carousel{
+
+    .carousel {
         min-height: 240px;
     }
-    .avaliacoes{
+
+    .avaliacoes {
         max-height: 400px;
         gap: 10px;
     }
-    .background-clientes{
+
+    .background-clientes {
         height: 100%;
         padding: 30px;
     }
-    .avaliacoes img{
+
+    .avaliacoes img {
         width: 210px;
         height: 120px;
     }
-    .carousel{
+
+    .carousel {
         display: flex;
         gap: 20px;
         justify-content: space-around;
@@ -652,23 +716,28 @@ footer > ul > li:hover {
         min-width: 300px;
     }
 }
+
 @media screen and (min-width:1024px) {
-    header{
+    header {
         display: none;
     }
-    .header-pc{
+
+    .header-pc {
         display: flex;
         flex-direction: column;
     }
-    .header-pc img{
+
+    .header-pc img {
         width: 260px;
         height: 130px;
     }
-    .whats-pc{
+
+    .whats-pc {
         display: flex;
         flex-direction: column;
         font-size: 1.3em;
     }
+
     #itens-2 {
         display: flex;
         flex-direction: column;
@@ -676,10 +745,12 @@ footer > ul > li:hover {
         align-items: center;
         font-size: 40px;
     }
-    #itens-2 a{
+
+    #itens-2 a {
         color: var(--cor2);
         padding: 10px;
     }
+
     #itens-2 a:hover {
         background-color: var(--cor2);
         color: var(--cor1);
@@ -687,22 +758,27 @@ footer > ul > li:hover {
         text-decoration: none;
         transform: scale(1.1);
     }
-    .video-container{
+
+    .video-container {
         background-color: #ffee00;
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
+
     .video {
         min-width: 576px;
         margin: 0;
     }
+
     section.sobre {
         height: 600px;
     }
-    section.sobre > h1{
+
+    section.sobre>h1 {
         margin: 20px 0px;
     }
+
     .area-sobre {
         display: flex;
         flex-direction: row;
@@ -710,45 +786,55 @@ footer > ul > li:hover {
         align-items: center;
         gap: 50px;
     }
-    .quem-somos{
+
+    .quem-somos {
         height: 480px;
-        font-size: 1.1em; 
+        font-size: 1.1em;
     }
-    .mundial-pneus{
+
+    .mundial-pneus {
         height: 480px;
         margin-top: 0;
         padding: 20px;
     }
-    .produtos{
+
+    .produtos {
         font-size: 2em;
         height: 550px;
     }
-    .produtos-titulo > h2{
+
+    .produtos-titulo>h2 {
         font-size: 1.2em;
     }
-    .carousel{
+
+    .carousel {
         min-width: 400px;
         min-height: 250px;
     }
 
-    .img-lojas{
+    .img-lojas {
         display: flex;
         flex-direction: row;
         gap: 30px;
     }
-    .lojas-ma{
+
+    .lojas-ma {
         margin-top: 0;
     }
-    .divisao{
+
+    .divisao {
         font-size: 1.2em;
     }
-    .avaliacoes{
+
+    .avaliacoes {
         max-height: 400px;
         gap: 20px;
     }
-    .avaliacoes img{
+
+    .avaliacoes img {
         width: 240px;
     }
+
     .background-clientes {
         background-image: url(imagens/background-clientes.jpg);
         background-size: cover;
@@ -762,102 +848,126 @@ footer > ul > li:hover {
         padding: 30px;
     }
 }
+
 @media screen and (min-width:1440px) {
-    .header-pc img{
+    .header-pc img {
         width: 350px;
         height: 200px;
     }
+
     .video-container {
         background-color: #ffee00;
     }
+
     .video {
         min-width: 700px;
     }
-    .whats-pc{
+
+    .whats-pc {
         font-size: 2.5em;
         width: 190px;
     }
-    .whats-pc i{
+
+    .whats-pc i {
         font-size: 2em;
     }
-    .whats-pc p{
+
+    .whats-pc p {
         width: 190px;
     }
+
     section.sobre {
         height: 780px;
     }
-    .area-sobre{    
+
+    .area-sobre {
         display: flex;
         flex-direction: row;
         gap: 50px;
     }
-    .quem-somos{
+
+    .quem-somos {
         height: 580px;
         font-size: 1.2em;
     }
-    .mundial-pneus{
+
+    .mundial-pneus {
         height: 580px;
         margin-top: 0;
         font-size: 1.2em;
     }
-    .mundial-pneus li{
+
+    .mundial-pneus li {
         line-height: 1.9em;
     }
-    .img-lojas{
+
+    .img-lojas {
         display: flex;
         flex-direction: column;
         gap: 50px;
     }
-    .lojas-pi{
+
+    .lojas-pi {
         display: flex;
         flex-direction: row;
         gap: 50px;
     }
-    .lojas-ma{
+
+    .lojas-ma {
         display: flex;
         flex-direction: row;
         gap: 50px;
     }
-    .lojas-pi p{
+
+    .lojas-pi p {
         font-size: 0.9em;
     }
-    #sobre{
+
+    #sobre {
         font-size: 3em;
         width: 700px;
     }
-    #textoSobre{
+
+    #textoSobre {
         font-size: 1.5em;
         line-height: 2em;
         padding: 20px;
         margin: 0 10px;
         width: 700px;
     }
-    section.sobre{ 
+
+    section.sobre {
         margin-top: 70px;
         max-height: 800px;
     }
-    section.lojas > h1{
+
+    section.lojas>h1 {
         font-size: 3em;
     }
-    .divisao{
+
+    .divisao {
         font-size: 1.6em;
     }
-    section.clientes > h1{
+
+    section.clientes>h1 {
         font-size: 3em;
     }
-    footer > h1{
+
+    footer>h1 {
         font-size: 2em;
     }
-    .contato{  
+
+    .contato {
         font-size: 1.5em;
     }
-    .avaliacoes{
+
+    .avaliacoes {
         gap: 25px;
         min-width: 1000px;
     }
-    .avaliacoes img{
+
+    .avaliacoes img {
         width: 280px;
         height: 160px;
     }
 }
-

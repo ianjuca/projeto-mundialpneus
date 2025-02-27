@@ -26,10 +26,10 @@
             <img src="imagens/logo.jpg" alt="Mundial Pneus">
         </div>
         <div class="whatsapp-top">
-            <a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20atendimento!"         target="_blank" class="buttons">
+            <a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!"         target="_blank" class="buttons">
                   <i class="bi bi-whatsapp"></i>
              </a>
-            <p><a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20atendimento!" target="_blank">Vendas por <strong>Whatsapp</strong> clique aqui</a></p>  
+            <p><a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!" target="_blank">Vendas por <strong>Whatsapp</strong> clique aqui</a></p>  
         </div>
     </header>
     <main>
@@ -50,10 +50,10 @@
                 Seu Navegador não suporta vídeos.
             </video>
             <div class="whats-pc">
-                <a href="https://wa.me/+55086981886263" target="_blank" class="buttons">
+                <a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!" target="_blank" class="buttons">
                     <i class="bi bi-whatsapp"></i>
                </a>
-              <p><a href="https://wa.me/+55086981886263" target="_blank">Vendas por <strong>Whatsapp</strong> clique aqui</a></p>
+              <p><a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!" target="_blank">Vendas por <strong>Whatsapp</strong> clique aqui</a></p>
             </div>
         </div>
         <section class="sobre">
@@ -194,13 +194,13 @@
             CONTATO
         </h1>
         <ul>
-            <li><a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20atendimento!" class="box-whatsapp" target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a></li>
+            <li><a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!" class="box-whatsapp" target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a></li>
             <li><a href="https://www.instagram.com/mundialpneus/" target="_blank" class="box-instagram"><i class="bi bi-instagram"></i> Instagram</a></li>
             <li><a href="https://www.facebook.com/mundialpneu/?locale=pt_BR" class="box-facebook" target="_blank"><i class="bi bi-facebook"></i> Facebook</a></li>
         </ul>
         <img src="imagens/footer.jpg" alt="">
         <p><small>Mundial Pneus Ⓡ 2025 - Av. Pres. Getúlio Vargas, 1523 Teresina-PI - (86)98188-6263</small> </p>
-        <a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20atendimento!"         target="_blank" class="whatsapp-button">
+        <a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!"         target="_blank" class="whatsapp-button">
             <i class="bi bi-whatsapp"></i> faça seu orçamento
         </a>
     </footer>
@@ -214,15 +214,27 @@
         }
         document.addEventListener("DOMContentLoaded", function () {
             let video = document.querySelector("video");
-            let isPlaying = video.play();
-
-            if (isPlaying !== undefined) {
-                isPlaying.catch(error => {
-                    console.log("Autoplay bloqueado, mostrando botão de reprodução.");
-                    video.setAttribute("controls", "true");
-                });
+            if (video) {
+                video.muted = true;
+                let playPromise = video.play();
+        
+                if (playPromise !== undefined) {
+                    playPromise.then(() => {
+                        console.log("Vídeo rodando automaticamente!");
+                    }).catch(error => {
+                        console.log("Autoplay bloqueado, tentando solução alternativa...");
+                    // Se o autoplay for bloqueado, pode ser necessário mostrar um botão de play manual
+                    });
+                }
             }
         });
+        document.addEventListener("click", function () {
+            let video = document.querySelector("video");
+            if (video && video.paused) {
+                video.play();
+            }
+        });
+
 
         const images = [
             { src: "imagens/pneu-passeio.JPG", text: " <strong>Pneu de passeio</strong>" },
