@@ -877,7 +877,7 @@ footer>ul>li:hover {
     }
     .video-container {
         background-color: #ffee00;
-        height: 700px;
+        min-height: 700px;
     }
 
     .video {
