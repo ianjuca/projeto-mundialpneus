@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mundial Pneus - A melhor escolha em pneus com alta qualidade e preço competitivo.">
     <link rel="shortcut icon" href="imagens/logo-mundialpneus.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <!-- Icons -->
@@ -14,7 +15,7 @@
 <body>
     <header>
         <div class="navigation">
-            <i class="bi bi-list" onclick="clickMenu()" id="menu"></i>
+            <i class="bi bi-list" onclick="clickMenu()" id="menu" aria-label="Abrir menu"></i>
             <nav id="itens">
                 <a href="#sobre">Sobre</a>
                 <a href="#lojas">Lojas</a>
@@ -43,12 +44,7 @@
                     <a href="#contato">Contato</a>
                 </nav>
             </div>
-            <video id="meuVideo" class="video"  autoplay muted playsinline loop>
-                <source src="imagens/PNEUS-certo.mp4" type="video/mp4">
-                <source src="imagens/PNEUS-certo.webm" type="video/webm">
-                <source src="imagens/PNEUS-certo.ogv" type="video/ogg">
-                Seu Navegador não suporta vídeos.
-            </video>
+            <video id="meuVideo" class="video" autoplay muted playsinline loop></video>
             <div class="whats-pc">
                 <a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!" target="_blank" class="buttons">
                     <i class="bi bi-whatsapp"></i>
@@ -205,6 +201,28 @@
         </a>
     </footer>
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById("meuVideo");
+            const sources = {
+                mp4: "imagens/PNEUS-certo.mp4",
+                webm: "imagens/PNEUS-certo.webm",
+                ogg: "imagens/PNEUS-certo.ogv"
+            };
+            
+            function supportsFormat(format) {
+                return video.canPlayType(`video/${format}`) !== "";
+            }
+            
+            if (supportsFormat("mp4")) {
+                video.src = sources.mp4;
+            } else if (supportsFormat("webm")) {
+                video.src = sources.webm;
+            } else if (supportsFormat("ogg")) {
+                video.src = sources.ogg;
+            }
+            
+            video.load();
+        });
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'

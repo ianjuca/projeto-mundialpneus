@@ -773,7 +773,7 @@ footer>ul>li:hover {
     }
 
     .video {
-       width: 576px;
+        width: 576px;
         margin: 0;
     }
 
@@ -877,11 +877,11 @@ footer>ul>li:hover {
     }
     .video-container {
         background-color: #ffee00;
-        height: 700px;
+        min-height: 700px;
     }
 
     .video {
-        width: 700px;
+        min-width: 700px;
     }
 
     .whats-pc {
