@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Mundial Pneus - A melhor escolha em pneus com alta qualidade e preço competitivo.">
+    <meta name="description"
+        content="Mundial Pneus - A melhor escolha em pneus com alta qualidade e preço competitivo.">
     <link rel="shortcut icon" href="imagens/logo-mundialpneus.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <title>Mundial Pneus</title>
 </head>
+
 <body>
     <header>
         <div class="navigation">
@@ -27,10 +31,12 @@
             <img src="imagens/logo.jpg" alt="Mundial Pneus">
         </div>
         <div class="whatsapp-top">
-            <a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!"         target="_blank" class="buttons">
-                  <i class="bi bi-whatsapp"></i>
-             </a>
-            <p><a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!" target="_blank">Vendas por <strong>Whatsapp</strong> clique aqui</a></p>  
+            <a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!"
+                target="_blank" class="buttons">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <p><a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!"
+                    target="_blank">Vendas por <strong>Whatsapp</strong> clique aqui</a></p>
         </div>
     </header>
     <main>
@@ -46,10 +52,12 @@
             </div>
             <video id="meuVideo" class="video" autoplay muted playsinline loop></video>
             <div class="whats-pc">
-                <a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!" target="_blank" class="buttons">
+                <a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!"
+                    target="_blank" class="buttons">
                     <i class="bi bi-whatsapp"></i>
-               </a>
-              <p><a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!" target="_blank">Vendas por <strong>Whatsapp</strong> clique aqui</a></p>
+                </a>
+                <p><a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!"
+                        target="_blank">Vendas por <strong>Whatsapp</strong> clique aqui</a></p>
             </div>
         </div>
         <section class="sobre">
@@ -57,8 +65,11 @@
             <div class="area-sobre">
                 <div class="quem-somos">
                     <h2>Quem somos?</h2>
-                     <ul>
-                        <li>Mundial Pneus, uma empresa especializada em fornecer soluções de pneus de alta qualidade. Com mais de 8 anos de experiência no mercado, nossa equipe é comprometida em oferecer produtos e serviços personalizados para atender às necessidades específicas de cada cliente.</li>
+                    <ul>
+                        <li>Mundial Pneus, uma empresa especializada em fornecer soluções de pneus de alta qualidade.
+                            Com mais de 8 anos de experiência no mercado, nossa equipe é comprometida em oferecer
+                            produtos e serviços personalizados para atender às necessidades específicas de cada cliente.
+                        </li>
                     </ul>
                 </div>
                 <div class="mundial-pneus">
@@ -72,91 +83,111 @@
                 </div>
             </div>
         </section>
-            <div class="produtos">
-                <div class="produtos-titulo">
-                    <h2>NOSSOS PRODUTOS</h2>
+        <div class="produtos">
+            <div class="produtos-titulo">
+                <h2>NOSSOS PRODUTOS</h2>
+            </div>
+            <div class="carrosel-baixo">
+                <button id="prevButton">
+                    <i class="bi bi-caret-left-fill"></i>
+                </button>
+                <div class="carousel">
+                    <img src="imagens/pneu-passeio.JPG" alt="" class='imgs-produtos' id="carouselImage">
+                    <p id="carouselText" class="text"><strong>Pneu de passeio</strong></p>
                 </div>
-                <div class="carrosel-baixo">
-                    <button id="prevButton">
-                        <i class="bi bi-caret-left-fill"></i>
-                    </button>
-                    <div class="carousel">
-                        <img src="imagens/pneu-passeio.JPG" alt="" class='imgs-produtos' id="carouselImage">
-                        <p id="carouselText" class="text"><strong>Pneu de passeio</strong></p>
+                <button id="nextButton">
+                    <i class="bi bi-caret-right-fill"></i>
+                </button>
+            </div>
+        </div>
+        <div class="promocoes">
+            <div class="promocoes-titulo">
+                <h2>Promoções da Semana</h2>
+            </div>
+            <div class="carrosel-baixo-promocoes">
+                <button id="prevButtonPromocoes">
+                    <i class="bi bi-caret-left-fill"></i>
+                </button>
+                <div class="carousel-promocoes">
+                    <img src="imagens/promocao-1.jpeg" alt="" class='imgs' id="carouselImagePromocoes">
+                </div>
+                <button id="nextButtonPromocoes">
+                    <i class="bi bi-caret-right-fill"></i>
+                </button>
+            </div>
+        </div>
+        <section class="lojas">
+            <h1 id="lojas">NOSSAS LOJAS</h1>
+            <div class="img-lojas">
+                <div class="lojas-pi">
+                    <div class="loja1">
+                        <div class="borda"><img src="imagens/loja-tabuleta.jpg" alt=""></div>
+                        <a href="https://www.google.com.br/maps/place/MUNDIAL+PNEUS/@-5.1231452,-42.7992942,17z/data=!4m6!3m5!1s0x78e36d8499c0001:0x3b60afd30cbbd745!8m2!3d-5.1231505!4d-42.7967193!16s%2Fg%2F11ddx4931z?entry=ttu&g_ep=EgoyMDI1MDEyNy4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank">
+                            <button class="buttons">
+                                <i class="bi bi-geo-alt-fill">Teresina</i>
+                            </button>
+                        </a>
+                        <p>Av. Pres. Getúlio Vargas, 1523 <br> Teresina-PI</p>
                     </div>
-                    <button id="nextButton">
-                        <i class="bi bi-caret-right-fill"></i>
-                    </button>
+                    <div class="loja2">
+                        <div class="borda"><img src="imagens/loja-parnaiba.jpg" alt="Mundial pneus em Parnaíba"></div>
+                        <a href="https://www.google.com.br/maps/place/MUNDIAL+PNEUS/@-2.9321131,-41.7570089,17z/data=!3m1!4b1!4m6!3m5!1s0x7ec3b154effb513:0x3017e4167d04be2f!8m2!3d-2.9321185!4d-41.754434!16s%2Fg%2F11h32znyzc?entry=ttu&g_ep=EgoyMDI1MDEyNy4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank">
+                            <button class="buttons">
+                                <i class="bi bi-geo-alt-fill">Parnaíba</i>
+                            </button>
+                        </a>
+                        <p>Av. Dep. Pinheiro Machado, 3154 <br> Parnaíba-PI</p>
+                    </div>
+                    <div class="loja3">
+                        <div class="borda"><img src="imagens/endereco-mundialpneus06.jpg" alt=""></div>
+                        <a href="#lojas">
+                            <button class="buttons">
+                                <i class="bi bi-geo-alt-fill">Teresina</i>
+                            </button>
+                        </a>
+                        <p>Em breve abriremos nossa filial na Av.henry hall
+                        </p>
+                    </div>
+                </div>
+                <div class="lojas-ma">
+                    <div class="loja4">
+                        <div class="borda"><img src="imagens/loja-pres-dutra.jpg" alt=""></div>
+                        <a href="https://www.google.com.br/maps/place/MUNDIAL+PNEUS/@-5.2867884,-44.4955146,17z/data=!3m1!4b1!4m6!3m5!1s0x7885ddf59912ead:0xddfa315e1f07bec0!8m2!3d-5.2867884!4d-44.4955146!16s%2Fg%2F11trsqvj24?entry=ttu&g_ep=EgoyMDI1MDEyNy4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank">
+                            <button class="buttons">
+                                <i class="bi bi-geo-alt-fill">Pres. Dutra</i>
+                            </button>
+                        </a>
+                        <p>Av. José Olavo Sampaio, 867 <br>Pres. Dutra-MA</p>
+                    </div>
+                    <div class="loja5">
+                        <div class="borda"><img src="imagens/loja-codo.PNG" alt=""></div>
+                        <a href="https://www.google.com.br/maps/place/mundial+pneus/@-4.4730917,-43.8902229,17z/data=!3m1!4b1!4m6!3m5!1s0x78bf19b76313b6f:0xab96561eafb458e6!8m2!3d-4.4730917!4d-43.8902229!16s%2Fg%2F11v_4vl6pj?entry=ttu&g_ep=EgoyMDI1MDEyNy4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank">
+                            <button class="buttons">
+                                <i class="bi bi-geo-alt-fill">Codó</i>
+                            </button>
+                        </a>
+                        <p>Av. Santos Dumont, N° 3967<br> Codó-MA</p>
+                    </div>
+                    <div class="loja6">
+                        <div class="borda"><img src="imagens/loja-caxias.JPG" alt=""></div>
+                        <a href="https://maps.app.goo.gl/XdoxJaRR7tDeWfF39">
+                            <button class="buttons">
+                                <i class="bi bi-geo-alt-fill">Caxias</i>
+                            </button>
+                        </a>
+                        <p>Av. Central, N° 606 - Centro, <br> Caxias - MA</p>
+                    </div>
                 </div>
             </div>
-        <section class="lojas">    
-                <h1 id="lojas">NOSSAS LOJAS</h1>
-                <div class="img-lojas">
-                    <div class="lojas-pi">
-                        <div class="loja1">
-                            <div class="borda"><img src="imagens/loja-tabuleta.jpg" alt=""></div>
-                            <a href="https://www.google.com.br/maps/place/MUNDIAL+PNEUS/@-5.1231452,-42.7992942,17z/data=!4m6!3m5!1s0x78e36d8499c0001:0x3b60afd30cbbd745!8m2!3d-5.1231505!4d-42.7967193!16s%2Fg%2F11ddx4931z?entry=ttu&g_ep=EgoyMDI1MDEyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                                <button class="buttons">
-                                    <i class="bi bi-geo-alt-fill">Teresina</i>
-                                </button>
-                            </a>
-                            <p>Av. Pres. Getúlio Vargas, 1523 <br> Teresina-PI</p>
-                        </div>
-                        <div class="loja2" >
-                            <div class="borda"><img src="imagens/loja-parnaiba.jpg" alt="Mundial pneus em Parnaíba"></div>
-                            <a href="https://www.google.com.br/maps/place/MUNDIAL+PNEUS/@-2.9321131,-41.7570089,17z/data=!3m1!4b1!4m6!3m5!1s0x7ec3b154effb513:0x3017e4167d04be2f!8m2!3d-2.9321185!4d-41.754434!16s%2Fg%2F11h32znyzc?entry=ttu&g_ep=EgoyMDI1MDEyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                                <button class="buttons">
-                                    <i class="bi bi-geo-alt-fill">Parnaíba</i>
-                                </button>
-                            </a>
-                            <p>Av. Dep. Pinheiro Machado, 3154 <br> Parnaíba-PI</p>
-                        </div>
-                        <div class="loja3" >
-                            <div class="borda"><img src="imagens/endereco-mundialpneus06.jpg" alt=""></div>
-                            <a href="#lojas">
-                                <button class="buttons">
-                                    <i class="bi bi-geo-alt-fill">Teresina</i>
-                                </button>
-                            </a>
-                            <p>Em breve abriremos nossa filial na Av.henry hall
-                            </p>
-                        </div>
-                    </div>
-                    <div class="lojas-ma">
-                        <div class="loja4" >
-                            <div class="borda"><img src="imagens/loja-pres-dutra.jpg" alt=""></div>
-                            <a href="https://www.google.com.br/maps/place/MUNDIAL+PNEUS/@-5.2867884,-44.4955146,17z/data=!3m1!4b1!4m6!3m5!1s0x7885ddf59912ead:0xddfa315e1f07bec0!8m2!3d-5.2867884!4d-44.4955146!16s%2Fg%2F11trsqvj24?entry=ttu&g_ep=EgoyMDI1MDEyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                                <button class="buttons">
-                                    <i class="bi bi-geo-alt-fill">Pres. Dutra</i>
-                                </button>
-                            </a>
-                            <p>Av. José Olavo Sampaio, 867 <br>Pres. Dutra-MA</p>
-                        </div>
-                        <div class="loja5">
-                            <div class="borda"><img src="imagens/loja-codo.PNG" alt=""></div>
-                            <a href="https://www.google.com.br/maps/place/mundial+pneus/@-4.4730917,-43.8902229,17z/data=!3m1!4b1!4m6!3m5!1s0x78bf19b76313b6f:0xab96561eafb458e6!8m2!3d-4.4730917!4d-43.8902229!16s%2Fg%2F11v_4vl6pj?entry=ttu&g_ep=EgoyMDI1MDEyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                                <button class="buttons">
-                                    <i class="bi bi-geo-alt-fill">Codó</i>
-                                </button>
-                            </a>
-                            <p>Av. Santos Dumont, N° 3967<br> Codó-MA</p>
-                        </div>
-                        <div class="loja6">
-                            <div class="borda"><img src="imagens/loja-caxias.JPG" alt=""></div>
-                            <a href="https://maps.app.goo.gl/XdoxJaRR7tDeWfF39">
-                                <button class="buttons">
-                                    <i class="bi bi-geo-alt-fill">Caxias</i>
-                                </button>
-                            </a>
-                            <p>Av. Central, N° 606 - Centro, <br> Caxias - MA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="divisao">
-                    <p><i class="bi bi-credit-card-2-back-fill"></i> Dividimos em até 12x SEM JUROS</p>
-                    <p><i class="bi bi-lock-fill"></i> Compra Segura </p>
-                    <p><i class="bi bi-star-fill"></i> + de 8 anos no mercado</p>
-                </div>
+            <div class="divisao">
+                <p><i class="bi bi-credit-card-2-back-fill"></i> Dividimos em até 12x SEM JUROS</p>
+                <p><i class="bi bi-lock-fill"></i> Compra Segura </p>
+                <p><i class="bi bi-star-fill"></i> + de 8 anos no mercado</p>
+            </div>
         </section>
         <section class="clientes">
             <h1 id="clientes">NOSSOS CLIENTES</h1>
@@ -190,13 +221,17 @@
             CONTATO
         </h1>
         <ul>
-            <li><a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!" class="box-whatsapp" target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a></li>
-            <li><a href="https://www.instagram.com/mundialpneus/" target="_blank" class="box-instagram"><i class="bi bi-instagram"></i> Instagram</a></li>
-            <li><a href="https://www.facebook.com/mundialpneu/?locale=pt_BR" class="box-facebook" target="_blank"><i class="bi bi-facebook"></i> Facebook</a></li>
+            <li><a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!"
+                    class="box-whatsapp" target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a></li>
+            <li><a href="https://www.instagram.com/mundialpneus/" target="_blank" class="box-instagram"><i
+                        class="bi bi-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.facebook.com/mundialpneu/?locale=pt_BR" class="box-facebook" target="_blank"><i
+                        class="bi bi-facebook"></i> Facebook</a></li>
         </ul>
         <img src="imagens/footer.jpg" alt="">
         <p><small>Mundial Pneus Ⓡ 2025 - Av. Pres. Getúlio Vargas, 1523 Teresina-PI - (86)98188-6263</small> </p>
-        <a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!"         target="_blank" class="whatsapp-button">
+        <a href="https://wa.me/+55086981886263?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20um%20orçamento!"
+            target="_blank" class="whatsapp-button">
             <i class="bi bi-whatsapp"></i> faça seu orçamento
         </a>
     </footer>
@@ -208,11 +243,11 @@
                 webm: "imagens/PNEUS-certo.webm",
                 ogg: "imagens/PNEUS-certo.ogv"
             };
-            
+
             function supportsFormat(format) {
                 return video.canPlayType(`video/${format}`) !== "";
             }
-            
+
             if (supportsFormat("mp4")) {
                 video.src = sources.mp4;
             } else if (supportsFormat("webm")) {
@@ -220,7 +255,7 @@
             } else if (supportsFormat("ogg")) {
                 video.src = sources.ogg;
             }
-            
+
             video.load();
         });
         function clickMenu() {
@@ -235,13 +270,13 @@
             if (video) {
                 video.muted = true;
                 let playPromise = video.play();
-        
+
                 if (playPromise !== undefined) {
                     playPromise.then(() => {
                         console.log("Vídeo rodando automaticamente!");
                     }).catch(error => {
                         console.log("Autoplay bloqueado, tentando solução alternativa...");
-                    // Se o autoplay for bloqueado, pode ser necessário mostrar um botão de play manual
+                        // Se o autoplay for bloqueado, pode ser necessário mostrar um botão de play manual
                     });
                 }
             }
@@ -297,41 +332,80 @@
 
         nextButton.addEventListener("click", nextImage);
         prevButton.addEventListener("click", prevImage);
-        document.addEventListener("DOMContentLoaded", function() {
+
+        const imagesPromocoes = [
+            { src: "imagens/promocao-1.jpeg" },
+            { src: "imagens/promocao-2.jpeg" },
+            { src: "imagens/promocao-3.jpeg" }
+        ];
+
+        let currentIndexPromocoes = 0;
+
+        const carouselImagePromocoes = document.getElementById("carouselImagePromocoes");
+        const prevButtonPromocoes = document.getElementById("prevButtonPromocoes");
+        const nextButtonPromocoes = document.getElementById("nextButtonPromocoes");
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (imagesPromocoes.length === 0) {
+                nextButtonPromocoes.style.display = 'none';
+                prevButtonPromocoes.classList.add('invisivel');
+                console.log('Nenhuma imagem disponível');
+            } else {
+                updateCarouselPromocoes();
+            }
+        });
+
+        function updateCarouselPromocoes() {
+            carouselImagePromocoes.src = imagesPromocoes[currentIndexPromocoes].src;
+        }
+
+        prevButtonPromocoes.addEventListener("click", () => {
+            currentIndexPromocoes = (currentIndexPromocoes === 0) ? imagesPromocoes.length - 1 : currentIndexPromocoes - 1;
+            updateCarouselPromocoes();
+        });
+
+        nextButtonPromocoes.addEventListener("click", () => {
+            currentIndexPromocoes = (currentIndexPromocoes === imagesPromocoes.length - 1) ? 0 : currentIndexPromocoes + 1;
+            updateCarouselPromocoes();
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
             const avaliacoes = document.querySelectorAll('.avaliacoes img');
             const button = document.getElementById('button1');
             const button2 = document.getElementById('button2');
             button2.style.display = 'none';
             let visibleImages = 3;
             avaliacoes.forEach((img, index) => {
-            if (index >= visibleImages) {
-                img.style.display = 'none';
-            }
-            });
-            button.addEventListener('click', function() {
-            visibleImages += 3;
-            button2.style.display = 'inline';
-            avaliacoes.forEach((img, index) => {
-                if (index < visibleImages) {
-                img.style.display = 'inline';
-                }
-            });
-            if (visibleImages >= avaliacoes.length) {
-                button.style.display = 'none';
-            }
-            });
-            
-            button2.addEventListener('click', function() {
-            button.style.display = 'inline';
-            button2.style.display = 'none';
-            visibleImages = 3;
-            avaliacoes.forEach((img, index) => {
                 if (index >= visibleImages) {
-                img.style.display = 'none';
+                    img.style.display = 'none';
                 }
             });
+            button.addEventListener('click', function () {
+                visibleImages += 3;
+                button2.style.display = 'inline';
+                avaliacoes.forEach((img, index) => {
+                    if (index < visibleImages) {
+                        img.style.display = 'inline';
+                    }
+                });
+                if (visibleImages >= avaliacoes.length) {
+                    button.style.display = 'none';
+                }
+            });
+
+            button2.addEventListener('click', function () {
+                button.style.display = 'inline';
+                button2.style.display = 'none';
+                visibleImages = 3;
+                avaliacoes.forEach((img, index) => {
+                    if (index >= visibleImages) {
+                        img.style.display = 'none';
+                    }
+                });
             });
         });
     </script>
 </body>
+
 </html>
