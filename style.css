@@ -188,7 +188,7 @@ section.sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 1600px;
+    max-height: 3500px;
     text-align: center;
     margin-top: 50px;
     width: 100%;
@@ -220,6 +220,7 @@ section.sobre ul li {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    max-height: 3500px;
 }
 
 .quem-somos {
@@ -227,13 +228,27 @@ section.sobre ul li {
     border-radius: 10px;
     padding: 20px;
     width: 320px;
-    height: 420px;
+    height: 1580px;
     text-align: justify;
     line-height: 2em;
     text-indent: 10px;
     justify-content: center;
     align-items: center;
 
+}
+
+.mundial-pneus {
+    background-color: var(--cor1);
+    border-radius: 10px;
+    padding: 30px;
+    line-height: 2em;
+    width: 320px;
+    height: 1810px;
+    text-align: justify;
+    text-indent: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .produtos {
@@ -340,20 +355,6 @@ section.sobre ul li {
     min-width: 210px;
     min-height: 200px;
     text-align: center;
-}
-
-.mundial-pneus {
-    background-color: var(--cor1);
-    border-radius: 10px;
-    padding: 30px;
-    line-height: 2em;
-    width: 320px;
-    height: 510px;
-    text-align: justify;
-    text-indent: 10px;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
 }
 
 section.lojas {
@@ -848,7 +849,7 @@ footer>ul>li:hover {
     }
 
     section.sobre {
-        height: 600px;
+        height: 2300px;
     }
 
     section.sobre>h1 {
@@ -864,14 +865,15 @@ footer>ul>li:hover {
     }
 
     .quem-somos {
-        height: 480px;
+        height: 1980px;
         font-size: 1.1em;
     }
 
     .mundial-pneus {
-        height: 480px;
+        height: 1980px;
         margin-top: 0;
         padding: 20px;
+        line-height: 2.4;
     }
 
     .produtos {
@@ -981,7 +983,7 @@ footer>ul>li:hover {
     }
 
     section.sobre {
-        height: 780px;
+        height: 3080px;
     }
 
     .area-sobre {
@@ -991,12 +993,12 @@ footer>ul>li:hover {
     }
 
     .quem-somos {
-        height: 580px;
+        height: 2380px;
         font-size: 1.2em;
     }
 
     .mundial-pneus {
-        height: 580px;
+        height: 2380px;
         margin-top: 0;
         font-size: 1.2em;
     }
@@ -1042,7 +1044,7 @@ footer>ul>li:hover {
 
     section.sobre {
         margin-top: 70px;
-        max-height: 800px;
+        max-height: 2500px;
     }
 
     section.lojas>h1 {
