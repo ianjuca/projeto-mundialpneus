@@ -241,9 +241,9 @@ section.sobre ul li {
     background-color: var(--cor1);
     border-radius: 10px;
     padding: 30px;
-    line-height: 2em;
+    line-height: 1.5em;
     width: 320px;
-    height: 1810px;
+    height: 1410px;
     text-align: justify;
     text-indent: 10px;
     margin-top: 20px;
@@ -746,6 +746,36 @@ footer>ul>li:hover {
         width: 500px;
     }
 
+    section.sobre {
+        height: 1600px;
+    }
+
+    section.sobre>h1 {
+        margin: 20px 0px;
+    }
+
+    .area-sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .quem-somos {
+        width: 700px;
+        height: 820px;
+        font-size: 1.1em;
+    }
+
+    .mundial-pneus {
+        width: 700px;
+        height: 650px;
+        margin-top: 0;
+        padding: 20px;
+        line-height: 1.5;
+    }
+
     .produtos {
         font-size: 1.5em;
     }
@@ -849,7 +879,7 @@ footer>ul>li:hover {
     }
 
     section.sobre {
-        height: 2300px;
+        height: 1500px;
     }
 
     section.sobre>h1 {
@@ -858,22 +888,24 @@ footer>ul>li:hover {
 
     .area-sobre {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 50px;
     }
 
     .quem-somos {
-        height: 1980px;
+        width: 780px;
+        height: 720px;
         font-size: 1.1em;
     }
 
     .mundial-pneus {
-        height: 1980px;
+        width: 780px;
+        height: 650px;
         margin-top: 0;
         padding: 20px;
-        line-height: 2.4;
+        line-height: 1.5;
     }
 
     .produtos {
@@ -983,7 +1015,7 @@ footer>ul>li:hover {
     }
 
     section.sobre {
-        height: 3080px;
+        height: 1080px;
     }
 
     .area-sobre {
@@ -993,12 +1025,12 @@ footer>ul>li:hover {
     }
 
     .quem-somos {
-        height: 2380px;
+        height: 900px;
         font-size: 1.2em;
     }
 
     .mundial-pneus {
-        height: 2380px;
+        height: 900px;
         margin-top: 0;
         font-size: 1.2em;
     }
@@ -1027,24 +1059,6 @@ footer>ul>li:hover {
 
     .lojas-pi p {
         font-size: 0.9em;
-    }
-
-    #sobre {
-        font-size: 3em;
-        width: 700px;
-    }
-
-    #textoSobre {
-        font-size: 1.5em;
-        line-height: 2em;
-        padding: 20px;
-        margin: 0 10px;
-        width: 700px;
-    }
-
-    section.sobre {
-        margin-top: 70px;
-        max-height: 2500px;
     }
 
     section.lojas>h1 {
