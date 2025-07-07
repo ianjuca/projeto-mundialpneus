@@ -1015,7 +1015,7 @@ footer>ul>li:hover {
     }
 
     section.sobre {
-        height: 1080px;
+        height: 1280px;
     }
 
     .area-sobre {
@@ -1025,12 +1025,14 @@ footer>ul>li:hover {
     }
 
     .quem-somos {
-        height: 900px;
+        width: 600px;
+        height: 1200px;
         font-size: 1.2em;
     }
 
     .mundial-pneus {
-        height: 900px;
+        width: 600px;
+        height: 1200px;
         margin-top: 0;
         font-size: 1.2em;
     }
